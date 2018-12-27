@@ -11,6 +11,11 @@ app.get('/', function(req, res) {
   res.sendfile("index.html");
 })
 
+app.get('/recipe', function(req, res) {
+  res.status(200);
+  res.sendfile("recipe.html");
+})
+
 app.listen(port, function() {
 	console.log("app running"); 
 })
