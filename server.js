@@ -7,9 +7,8 @@ var app = express();
 app.use(express.static(__dirname + "/public"));
 
 app.get('/', function(req, res) {
-  res.type(text/html);
   res.status(200);
-  res.send(<p>HELLO WORLD!);
+  res.sendfile("index.html");
 })
 
 app.listen(port, function() {
