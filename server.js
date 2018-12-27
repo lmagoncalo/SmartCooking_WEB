@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
   res.sendfile("index.html");
 })
 
-app.get('/.*', function(req, res) {
+app.get('/*', function(req, res) {
   res.status(200);
   res.sendfile("index.html");
 })
