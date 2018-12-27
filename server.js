@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
 
 app.get('/recipe', function(req, res) {
   res.status(200);
-  res.sendfile("recipe.html");
+  res.sendfile("index.html");
 })
 
 app.listen(port, function() {
